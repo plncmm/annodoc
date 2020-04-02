@@ -27,9 +27,9 @@ Las reglas de anotación se pueden clasificar en 4 tipos:
 
 ### Reglas generales
 
-No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.
+* No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.
 
-Correcto:
+** Correcto:
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
@@ -38,7 +38,7 @@ T1 Disease 27 51
 ~~~
 </div>
 
-Incorrectos:
+** Incorrectos:
 
 <div class="annotation-incorrect" markdown="1">
 ~~~ ann
@@ -53,3 +53,5 @@ T1 Disease 23 52
 T1 Medication 27 39 
 ~~~
 </div>
+
+* No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.
