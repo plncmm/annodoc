@@ -488,13 +488,13 @@ a:visited { color: #205caa; }
 /* local styles */
 
 div.annotation-incorrect {
-  border: 1px solid red;
+  border: 3px solid red;
   margin:1em;
   padding:2em;
 }
 
 div.annotation-correct {
-  border: 1px solid green;
+  border: 3px solid green;
   margin:1em;
   padding:2em;
 }
