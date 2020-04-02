@@ -11,7 +11,7 @@ Este proyecto busca crear el primer cuerpo de texto (corpus) etiquetado con narr
 
 Usando el nombre de usuario y contraseñas dadas por el equipo busque la carpeta asignada con su nombre en [http://healthcarex.ml/brat-v1.3_Crunchy_Frog/#/](http://healthcarex.ml/brat-v1.3_Crunchy_Frog/#/). Seleccione el primer archivo en donde leerá una narrativa clínica. Al seleccionar una o más palabras, el software automáticamente le ofrecerá el menú mostrado abajo de entidades médicas y atributos. Cada uno de estos elementos son explicados en detalle más adelante a lo largo de esta guía.
 
-![brat](https://github.com/fvillena/annodoc/raw/gh-pages/static/img/image2.png | width=100)
+![brat](https://github.com/fvillena/annodoc/raw/gh-pages/static/img/image2.png)
 
 Cuando se termina el etiquetado de una narrativa dada se puede avanzar a la siguiente apretando la flecha hacia la derecha que se encuentra en la parte superior izquierda de la pantalla. Se puede parar de etiquetar y volver a ello ingresando con su usuario ya que las etiquetas quedan guardadas automáticamente. 
 
