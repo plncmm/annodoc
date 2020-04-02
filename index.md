@@ -19,7 +19,7 @@ El uso de BRAT nos permite comparar etiquetas entre varias personas leyendo las 
 
 ## Reglas de anotación manual de entidades
 
-Las reglas de anotación se pueden clasificar en 4 tipos [1]:
+Las reglas de anotación se pueden clasificar en 4 tipos:
 * Reglas generales (Reglas-G): reglas positivas y negativas que se aplican a todas las etiquetas de menciones, incluyen reglas ortográficas generales.
 * Reglas positivas (Reglas-P): reglas que especifican las entidades que se deben anotar.
 * Reglas negativas (Reglas-N): reglas que especifican las entidades que no hay que anotar.
