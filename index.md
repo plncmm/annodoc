@@ -31,10 +31,12 @@ No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan an
 
 Correcto:
 
+<div class="annotation-correct" markdown="1">
 ~~~ ann
 Diagnósticos de ingreso: - Episodio depresivo grave .
 T1 Disease 27 51 
 ~~~
+</div>
 
 Incorrectos:
 
