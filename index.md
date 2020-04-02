@@ -29,7 +29,23 @@ Las reglas de anotación se pueden clasificar en 4 tipos [1]:
 
 No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.
 
+Correcto:
+
 ~~~ ann
-Diagnósticos de ingreso: - Episodio depresivo grave
-T1 Disease 27 50
+Diagnósticos de ingreso: - Episodio depresivo grave .
+T1 Disease 27 51 
 ~~~
+
+Incorrectos:
+
+~~~ ann
+Diagnósticos de ingreso: - Episodio depresivo grave .
+T1 Disease 23 52 
+~~~
+
+~~~ ann
+… posiblemente secundaria a fluoxetina, que …
+T1 Medication 27 39 
+~~~
+
+
