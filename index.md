@@ -40,14 +40,14 @@ T1 Disease 27 51
 
 Incorrectos:
 
-<div class="documentation-example" markdown="1">
+<div class="annotation-incorrect" markdown="1">
 ~~~ ann
 Diagnósticos de ingreso: - Episodio depresivo grave .
 T1 Disease 23 52 
 ~~~
 </div>
 
-<div class="documentation-example" markdown="1">
+<div class="annotation-incorrect" markdown="1">
 ~~~ ann
 … posiblemente secundaria a fluoxetina, que …
 T1 Medication 27 39 
