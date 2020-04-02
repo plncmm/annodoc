@@ -16,3 +16,20 @@ Usando el nombre de usuario y contraseñas dadas por el equipo busque la carpeta
 Cuando se termina el etiquetado de una narrativa dada se puede avanzar a la siguiente apretando la flecha hacia la derecha que se encuentra en la parte superior izquierda de la pantalla. Se puede parar de etiquetar y volver a ello ingresando con su usuario ya que las etiquetas quedan guardadas automáticamente. 
 
 El uso de BRAT nos permite comparar etiquetas entre varias personas leyendo las mismas narrativas, por lo que pedimos que trabajen individualmente. En caso de querer aprender más de BRAT puede consultar el manual brat.nlplab.org/manual.html.
+
+## Reglas de anotación manual de entidades
+
+Las reglas de anotación se pueden clasificar en 4 tipos [1]:
+* Reglas generales (Reglas-G): reglas positivas y negativas que se aplican a todas las etiquetas de menciones, incluyen reglas ortográficas generales.
+* Reglas positivas (Reglas-P): reglas que especifican las entidades que se deben anotar.
+* Reglas negativas (Reglas-N): reglas que especifican las entidades que no hay que anotar.
+* Reglas multipalabra (Regla-M): reglas que especifican si un grupo de palabras debe anotarse bajo una única etiqueta o no.
+
+### Reglas generales
+
+No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.
+
+~~~ ann
+Diagnósticos de ingreso: - Episodio depresivo grave
+T1 Disease 27 50
+~~~
