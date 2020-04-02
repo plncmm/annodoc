@@ -3,7 +3,7 @@ layout: entry
 title: Protocolo de Anotación de Entidades en Textos Médicos
 ---
 
-# Introducción
+## Introducción
 
 Las fichas clínicas tienen un propósito legal y nemotécnico, pero también pueden ser usados para extraer información, por ejemplo, para fines epidemiológicos. Esto se conoce como “Uso Secundario de los Datos”. El trabajo de etiquetado de entidades médicas tiene como objetivo usar el conocimiento experto para identificar palabras o expresiones que tienen importancia clínica. Con un volumen de texto etiquetado considerable podemos entrenar algoritmos computacionales que realizan esta detección de manera automática.
 
