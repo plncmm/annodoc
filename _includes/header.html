@@ -7,6 +7,9 @@
     {% for e in site.entity %}
     <a class="topnav" href="{{ site.homeurl }}{{ e.url | remove_first:'/' }}">{{ e.title }}</a>
     {% endfor %}
+    {% for r in site.relation %}
+    <a class="topnav" href="{{ site.homeurl }}{{ r.url | remove_first:'/' }}">{{ r.title }}</a>
+    {% endfor %}
 
     {% if site.name %}<span class="site-title-topnav">{{ site.name }}</span>{% endif %}
 

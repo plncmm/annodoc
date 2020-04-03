@@ -63,3 +63,6 @@ Las reglas asociadas a cada una de las entidades a anotar se encuentran definida
 {% for e in site.entity %}
 * [{{ e.title }}]({{ e.url | remove_first:'/' }}): {{ e.shortdef }}
 {% endfor %}
+{% for r in site.relation %}
+* [{{ r.title }}]({{ r.url | remove_first:'/' }}): {{ r.shortdef }}
+{% endfor %}
