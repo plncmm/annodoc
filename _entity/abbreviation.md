@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "Abreviación"
-shortdef: "Abreviación es el procedimiento lingüístico de hacer más corta la morfología de ciertas palabras"
+shortdef: "Procedimiento lingüístico de hacer más corta la morfología de ciertas palabras"
 ---
 
 ## Definición
@@ -13,3 +13,95 @@ Abreviación es el procedimiento lingüístico de hacer más corta la morfologí
 * Contracción: se eliminan las letras centrales de la palabra y se dejan solo las letras más representativas (por ejemplo, avda.) [5].
 
 Las abreviaciones incluyen los casos de siglas (creación de palabras a partir de cada letra inicial de los términos principales de una expresión compleja, como por ejemplo _ONU_ por Organización de las Naciones Unidas) y acrónimos (ciertas siglas que llegan a convertirse en vocablos comunes como _ovni_, _pyme_ y _sida_).
+
+## Reglas positivas
+
+* Etiquetar todas las abreviaciones tanto de tipo personal como convencional.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Antec de repitencia …
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Pcte persiste Psicótico …
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+… resulta normal ECG y Ecocardiograma …
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Inicio de quetiapina 25mg
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* Etiquetar las abreviaciones de una letra o símbolo no estándar.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+TUS x OH
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+p hep normales
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+MP  (+)
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* Etiquetar todos los símbolos de palabras científicas o técnicas formados por letras convencionales que tienen validez internacional: Ag, Fe.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Na 141, K 4.1, Cl 103
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* Etiquetar las abreviaciones numéricas ordinales conformadas por números y letras.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+10mo día de hospitalización
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Lorazepam 1/2 ampolla  c/u
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+c/8 horas
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+## Reglas negativas
+
+* NO incluir en la etiqueta los puntos, aunque sean puntos abreviativos. 
+
