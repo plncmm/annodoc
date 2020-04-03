@@ -1,4 +1,4 @@
-Annodoc: annotation documentation support system
+Protocolo de Anotación de Entidades en Textos Médicos
 ================================================
 
-Home page: <http://spyysalo.github.io/annodoc>
+Sitio web: <https://fvillena.github.io/annodoc/>
