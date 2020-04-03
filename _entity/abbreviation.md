@@ -105,3 +105,112 @@ T1 Abbreviation 0 5
 
 * NO incluir en la etiqueta los puntos, aunque sean puntos abreviativos. 
 
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Ac. Valproico
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Dra. Juanita Pérez
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+… despertó a las 7:00 hrs. Plan: …
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* NO incluir en la etiqueta los paréntesis u otros separadores que no formen parte de la abreviación.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Trastorno estrés post traumático complejo (DESNOS) 
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Trastorno estrés post traumático complejo (DESNOS) 
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+FP/FR de …
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* NO etiquetar abreviaciones correspondientes a nombres o apellidos.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Dra. Juanita Pérez Z. 
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Dra. J. Pérez. 
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* NO etiquetar las abreviaciones numéricas ordinales convencionales.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+8º día de hospitalización
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Hoy se realizará 3ª sesión de … 
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+22º día de hospitalización
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+## Reglas multipalabra
+
+* Anotar como una sola mención las abreviaciones que aparecen en el texto separados sólo por espacios o por guiones y que componen una entidad única.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+… diagnósticos de TAB I, y sospecha de …
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+…. ERC-IV recientemente pesquisado…. 
+T1 Abbreviation 0 5 
+~~~
+</div>
+
+* Anotar como una sola mención las abreviaciones que aparecen en el texto aparentemente compuestas por dos palabras pero que componen una entidad única.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+… bioquímico destacan hiperCa 10.5, HipoNa 132
+T1 Abbreviation 0 5 
+~~~
+</div>
