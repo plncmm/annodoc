@@ -28,14 +28,14 @@ T1 Abbreviation 0 5
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Pcte persiste Psicótico …
-T1 Abbreviation 0 5 
+T1 Abbreviation 0 4 
 ~~~
 </div>
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 … resulta normal ECG y Ecocardiograma …
-T1 Abbreviation 0 5 
+T1 Abbreviation 17 20 
 ~~~
 </div>
 
