@@ -55,3 +55,11 @@ T1 Medication 27 39
 </div>
 
 * No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.
+
+## Reglas específicas
+
+Las reglas asociadas a cada una de las entidades a anotar se encuentran definidas en su respectiva página:
+
+{% for e in site.entity %}
+* [{{ e.title }}]({{ e.url | remove_first:'/' }}): {{ e.shortdef }}
+{% endfor %}
