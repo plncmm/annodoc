@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: "Abreviación"
+title: "Abbreviation"
 shortdef: "Procedimiento lingüístico de hacer más corta la morfología de ciertas palabras"
 ---
 
