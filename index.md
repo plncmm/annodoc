@@ -38,7 +38,7 @@ T1 Disease 27 51
 ~~~
 </div>
 
-  * Incorrectos:
+  * Incorrecto:
 
 <div class="annotation-incorrect" markdown="1">
 ~~~ ann
