@@ -5,7 +5,7 @@
     {% if site.homeurl %}<a class="topnav" href="{{ site.homeurl }}">Inicio</a>{% endif %}
 
     {% for e in site.entity %}
-    <a class="topnav" href="{{ e.url | remove_first:'/' }}">{{ e.title }}</a>
+    <a class="topnav" href="{{ site.homeurl }}{{ e.url | remove_first:'/' }}">{{ e.title }}</a>
     {% endfor %}
 
     {% if site.name %}<span class="site-title-topnav">{{ site.name }}</span>{% endif %}
