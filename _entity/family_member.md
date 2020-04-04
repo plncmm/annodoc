@@ -87,5 +87,6 @@ A3 Paternal T3
 ~~~
 </div>
 
-![attributes](https://github.com/fvillena/annodoc/raw/gh-pages/static/img/image5.jpg)
+<img src="https://github.com/fvillena/annodoc/raw/gh-pages/static/img/image5.jpg" width="100%"/>
+
 Ejemplo de anotación de atributos (materno o paterno) en miembros de la familia.
