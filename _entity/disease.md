@@ -23,6 +23,17 @@ Ejemplo de anotación de [Clinical Finding]() y [Disease](). Nótese que la enti
 
 Las reglas positivas, negativas y multipalabra de anotación de [Clinical Finding]() se aplican también para la anotación de [Disease]().
 
+## Reglas positivas
+
+* Anotar los atributos temporales sólo si la el nombre específico de la enfermedad lo contiene.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+… paciente presenta periodontitis crónica ...
+T1 Clinical_Finding 20 41 
+~~~
+</div>
+
 ## Caso especial
 
 Los hallazgos clínicos mencionados en los antecedentes familiares de los pacientes, que no estén asignados a un sujeto particular en la oración, deben ser etiquetados como hallazgo clínico con el atributo de “antecedente familiar”.
