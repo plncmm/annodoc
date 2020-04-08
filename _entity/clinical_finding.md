@@ -116,6 +116,38 @@ T1 Clinical_Finding 0 47
 ~~~
 </div>
 
+* Incluir en las etiquetas la duración de los hallazgos clínicos o enfermedades, incluyendo cuando sea un atributo inherente del proceso patológico en sí.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+… dx psiquiátricos de TAB de larga data…
+T1 Clinical_Finding 22 39 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Pte con artralgia desde hace 3 años , diurnas , con aumento de...
+T1 Clinical_Finding 8 45 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+Es un atributo inherente del proceso patológico en sí.
+~~~ ann
+Dolor lumbar de inicio súbito
+T1 Clinical_Finding 0 29 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+Es un atributo inherente del proceso patológico en sí.
+~~~ ann
+Dolor crónico de articulaciones interfalángicas
+T1 Clinical_Finding 0 13 
+~~~
+</div>
+
 ## Reglas negativas
 
 * NO etiquetar trastornos expresados como la identidad o atributo de un objeto.
@@ -124,38 +156,6 @@ T1 Clinical_Finding 0 47
 ~~~ ann
 Medidas generales Régimen diabético
 T1 Clinical_Finding 26 35 
-~~~
-</div>
-
-* NO incluir en las etiquetas la duración de los hallazgos clínicos o enfermedades, excepto cuando sea un atributo inherente del proceso patológico en sí.
-
-<div class="annotation-incorrect" markdown="1">
-~~~ ann
-… dx psiquiátricos de TAB de larga data…
-T1 Clinical_Finding 29 39 
-~~~
-</div>
-
-<div class="annotation-incorrect" markdown="1">
-~~~ ann
-Pte con artralgia desde hace 3 años , diurnas , con aumento de...
-T1 Clinical_Finding 18 45 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-Correcto
-~~~ ann
-Dolor lumbar de inicio súbito
-T1 Clinical_Finding 16 29 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-Correcto
-~~~ ann
-Dolor crónico de articulaciones interfalángicas
-T1 Clinical_Finding 0 13 
 ~~~
 </div>
 
