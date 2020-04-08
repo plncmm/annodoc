@@ -148,6 +148,15 @@ T1 Clinical_Finding 0 13
 ~~~
 </div>
 
+* Anotar los atributos dimensionales del hallazgo clínico.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+se observa nódulo pulmonar de 15x 16 mm.
+T1 Clinical_Finding 11 39 
+~~~
+</div>
+
 ## Reglas negativas
 
 * NO etiquetar trastornos expresados como la identidad o atributo de un objeto.
