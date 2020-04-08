@@ -116,7 +116,7 @@ T1 Clinical_Finding 0 47
 ~~~
 </div>
 
-* Incluir en las etiquetas la duración de los hallazgos clínicos o enfermedades, incluyendo cuando sea un atributo inherente del proceso patológico en sí.
+* Incluir en las etiquetas la duración de los hallazgos clínicos, incluyendo cuando sea un atributo inherente del proceso patológico en sí.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
