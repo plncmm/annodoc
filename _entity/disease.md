@@ -25,7 +25,7 @@ Las reglas positivas, negativas y multipalabra de anotación de [Clinical Findin
 
 ## Reglas positivas
 
-* Anotar los atributos temporales sólo si la el nombre específico de la enfermedad lo contiene.
+* Anotar los atributos temporales sólo si el nombre específico de la enfermedad lo contiene.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
