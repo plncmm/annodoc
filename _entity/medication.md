@@ -72,8 +72,8 @@ T1 Medication 0 27
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
-… litio retard 450mg 1-0-1 lactulosa 66% 20ml cada 8hrs … 
-T1 Medication 3 15 
+... litio retard 450mg 1-0-1 lactulosa 66% 20ml cada 8hrs … 
+T1 Medication 4 15 
 T1 Medication 27 36 
 ~~~
 </div>
