@@ -8,37 +8,6 @@ Deben anotarse en esta clase de entidad todas las menciones de medicamentos o dr
 
 ## Reglas positivas
 
-* En caso de mencionarse, deben incluirse en la etiqueta la cantidad, dosis, frecuencia y modo/vía de administración del medicamento.
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-… litio retard 450mg 1-0-1 lactulosa 66% 20ml cada 8hrs … 
-T1 Medication 3 26 
-T1 Medication 27 55 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-Risperidona 2 mg noche, subir mañana a 3 mg.
-T1 Medication 0 43 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-Socian (Amisulpirida 50 mg)	
-T1 Medication 0 27 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-se han titulado fármacos antipsicoticos.
-T1 Medication 16 39 
-~~~
-</div>
-
 * Anotar como medicamento todos los líquidos administrados por vía intravenosa, incluyendo los productos biológicos.
 
 <div class="annotation-correct" markdown="1">
@@ -51,7 +20,7 @@ T1 Medication 32 43
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Hidratación EV 1000 cc suero fisiológico goteo rápido
-T1 Medication 15 40 
+T1 Medication 23 40 
 ~~~
 </div>
 
@@ -91,3 +60,35 @@ T1 Medication 27 36
 T1 Medication 38 49 
 ~~~
 </div>
+
+* En caso de mencionarse, NO deben incluirse en la etiqueta la cantidad, dosis, frecuencia y modo/vía de administración del medicamento.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Socian (Amisulpirida 50 mg)	
+T1 Medication 0 27 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+… litio retard 450mg 1-0-1 lactulosa 66% 20ml cada 8hrs … 
+T1 Medication 3 15 
+T1 Medication 27 36 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Risperidona 2 mg noche, subir mañana a 3 mg.
+T1 Medication 0 11 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+se han titulado fármacos antipsicoticos.
+T1 Medication 16 39 
+~~~
+</div>
+
