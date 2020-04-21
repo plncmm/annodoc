@@ -56,8 +56,8 @@ T1 Medication 11 18
 ~~~ ann
 (+) a cocaína, (con trazas)marihuana, anfetaminas.
 T1 Medication 6 13 
-T1 Medication 27 36 
-T1 Medication 38 49 
+T2 Medication 27 36 
+T3 Medication 38 49 
 ~~~
 </div>
 
@@ -74,7 +74,7 @@ T1 Medication 0 27
 ~~~ ann
 ... litio retard 450mg 1-0-1 lactulosa 66% 20ml cada 8hrs … 
 T1 Medication 4 15 
-T1 Medication 27 36 
+T2 Medication 27 36 
 ~~~
 </div>
 
