@@ -22,31 +22,24 @@ Dentro de la etiqueta “hallazgos clínicos” se anotan entidades que pueden p
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Paciente con juicio de la realidad alterado asociado a fiebre 
-T1 Clinical_Finding 0 61 
+T1 Clinical_Finding 13 43
+T2 Clinical_Finding 55 61
 ~~~
 </div>
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Dolor abdominal intenso migrante que impide la marcha
-T1 Clinical_Finding 0 53 
+T1 Clinical_Finding 0 15 
 ~~~
 </div>
 
-* Los antecedentes de enfermedades pasadas, que el paciente ya no tenga, se incluyen como hallazgo al igual que las cirugías previas.
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-Paciente con antecedente de apendicectomía, colecistectomía consulta por…
-T1 Clinical_Finding 13 42 
-T2 Clinical_Finding 44 59 
-~~~
-</div>
+* Los antecedentes de enfermedades pasadas, que el paciente ya no tenga, se incluyen como hallazgo.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Paciente con antecedentes de Osteomielitis por S. Aureus.
-T1 Clinical_Finding 29 57 
+T1 Clinical_Finding 29 56 
 ~~~
 </div>
 
@@ -67,14 +60,35 @@ T1 Clinical_Finding 13 23
 ~~~
 </div>
 
-* Etiquetar frases que describen el tratamiento y/o el resultado del mismo
+* Etiquetar dentro de esta categoría las frases que describen hábitos de consumo.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
-Usuario de vitamina c 800 UI....
-T1 Clinical_Finding 0 28 
+Consumo de alcohol: +, conusmo de cigarro: - ....
+T1 Clinical_Finding 0 21 
+T2 Clinical_Finding 23 44 
 ~~~
 </div>
+
+* Incluir en las etiquetas la duración de los hallazgos clínicos sólo cuando sea un atributo inherente del proceso patológico en sí.
+
+<div class="annotation-correct" markdown="1">
+Es un atributo inherente del proceso patológico en sí.
+~~~ ann
+Dolor crónico de articulaciones interfalángicas
+T1 Clinical_Finding 0 13 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+… dx psiquiátricos de TAB de larga data…
+T1 Clinical_Finding 22 39 
+~~~
+</div>
+
+
+* Etiquetar frases que describen tratamientos medicamentosos y el resultado del mismo.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
@@ -112,52 +126,20 @@ T1 Clinical_Finding 13 32
 Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
-T1 Clinical_Finding 0 47 
-~~~
-</div>
-
-* Incluir en las etiquetas la duración de los hallazgos clínicos, incluyendo cuando sea un atributo inherente del proceso patológico en sí.
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-… dx psiquiátricos de TAB de larga data…
-T1 Clinical_Finding 22 39 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-Pte con artralgia desde hace 3 años , diurnas , con aumento de...
-T1 Clinical_Finding 8 45 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-Es un atributo inherente del proceso patológico en sí.
-~~~ ann
-Dolor lumbar de inicio súbito
-T1 Clinical_Finding 0 29 
-~~~
-</div>
-
-<div class="annotation-correct" markdown="1">
-Es un atributo inherente del proceso patológico en sí.
-~~~ ann
-Dolor crónico de articulaciones interfalángicas
-T1 Clinical_Finding 0 13 
-~~~
-</div>
-
-* Anotar los atributos dimensionales del hallazgo clínico.
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-se observa nódulo pulmonar de 15x 16 mm.
-T1 Clinical_Finding 11 39 
+T1 Clinical_Finding 25 47 
 ~~~
 </div>
 
 ## Reglas negativas
+
+* No anotar los atributos dimensionales del hallazgo clínico.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+se observa nódulo pulmonar de 15x 16 mm.
+T1 Clinical_Finding 11 26 
+~~~
+</div>
 
 * NO etiquetar trastornos expresados como la identidad o atributo de un objeto.
 
