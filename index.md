@@ -25,6 +25,7 @@ El uso de BRAT nos permite comparar etiquetas entre varias personas leyendo las 
 
 ## Reglas de anotación manual de entidades
 
+La premisa fundamental que rige todas las reglas de anotación en este protocolo es que **se debe anotar la expresión más corta y general posible**, considerando que aún así se debe describir completamente la entidad. En este sentido, las palabras modificadoras deben ser excluidas.
 Las reglas de anotación se pueden clasificar en 4 tipos:
 * Reglas generales (Reglas-G): reglas positivas y negativas que se aplican a todas las etiquetas de menciones, incluyen reglas ortográficas generales.
 * Reglas positivas (Reglas-P): reglas que especifican las entidades que se deben anotar.
