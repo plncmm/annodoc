@@ -21,9 +21,9 @@ Dentro de la etiqueta “hallazgos clínicos” se anotan entidades que pueden p
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
-Paciente con juicio de la realidad alterado asociado a fiebre 
-T1 Clinical_Finding 13 43
-T2 Clinical_Finding 55 60
+Paciente con juicio de la realidad alterado asociado a fiebre
+T1 Clinical_Finding 13 43 
+T2 Clinical_Finding 55 60 
 ~~~
 </div>
 
