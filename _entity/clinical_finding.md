@@ -65,8 +65,8 @@ T1 Clinical_Finding 13 23
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Consumo de alcohol: +, conusmo de cigarro: - ....
-T1 Clinical_Finding 0 21 
-T2 Clinical_Finding 23 44 
+T1 Clinical_Finding 11 21 
+T2 Clinical_Finding 34 44 
 ~~~
 </div>
 
@@ -87,20 +87,12 @@ T1 Clinical_Finding 22 39
 ~~~
 </div>
 
-
-* Etiquetar frases que describen tratamientos medicamentosos y el resultado del mismo.
-
-<div class="annotation-correct" markdown="1">
-~~~ ann
-En tratamiento con eutirox 50 mcg al dia
-T1 Clinical_Finding 0 40 
-~~~
-</div>
+* Anotar frases que describen el resultado de tratamientos medicamentosos.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
-T1 Clinical_Finding 0 65 
+T1 Clinical_Finding 37 65 
 ~~~
 </div>
 
@@ -110,7 +102,7 @@ T1 Clinical_Finding 0 65
 Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Clinical_Finding 2 32 
+T1 Clinical_Finding 13 32 
 ~~~
 </div>
 
@@ -126,13 +118,32 @@ T1 Clinical_Finding 13 32
 Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
-T1 Clinical_Finding 25 47 
+T1 Clinical_Finding 25 38 
 ~~~
 </div>
 
 ## Reglas negativas
 
-* No anotar los atributos dimensionales del hallazgo clínico.
+* No anotar tratamientos medicamentosos como hallazgos clínicos.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
+T1 Clinical_Finding 0 35 
+~~~
+</div>
+
+* NO incluir en las anotaciones de resultados los exámenes de apoyo o procedimientos diagnósticos realizados.
+
+<div class="annotation-incorrect" markdown="1">
+Correcto
+~~~ ann
+… urocultivo positivo a enteroco ...
+T1 Clinical_Finding 2 32 
+~~~
+</div>
+
+* NO anotar los atributos dimensionales del hallazgo clínico.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
@@ -152,7 +163,7 @@ T1 Clinical_Finding 26 35
 
 ## Reglas multipalabra
 
-* Etiquetar como una sola entidad los hallazgos clínicos compuestos por más de una palabra.
+* Etiquetar como una sola entidad los hallazgos clínicos compuestos por más de una palabra y que estén relacionados con la misma manifestación u observación clínica.
 
 <div class="annotation-correct" markdown="1">
 Correcto: una entidad
