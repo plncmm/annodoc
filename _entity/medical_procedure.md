@@ -61,7 +61,6 @@ A1 waiting T1
 * No anotar los resultados de los procedimientos dentro de esta categoría 
 
 <div class="annotation-incorrect" markdown="1">
-Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
 T1 Medical_Procedure 2 32 
