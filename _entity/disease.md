@@ -29,7 +29,7 @@ Las reglas positivas, negativas y multipalabra de anotación de [Clinical Findin
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 … paciente presenta periodontitis crónica ...
-T1 Clinical_Finding 20 41 
+T1 Disease 20 41 
 ~~~
 </div>
 
@@ -40,8 +40,8 @@ Los hallazgos clínicos mencionados en los antecedentes familiares de los pacien
 <div class="annotation-correct" markdown="1">
 Negado + Antecedente Familiar Implícito
 ~~~ ann
-… sin antecedentes familiares de patología psiquiátrica.
-T1 Clinical_Finding 33 55 
+… sin antecedentes familiares de Enfermedad de Alzheimer.
+T1 Disease 33 56 
 A1 Implicit_Family_Background T1
 A1 Negated T1
 ~~~
@@ -50,8 +50,8 @@ A1 Negated T1
 <div class="annotation-correct" markdown="1">
 Antecedente Familiar Implícito
 ~~~ ann
-antecedentes familiares de TUS por OH 
-T1 Clinical_Finding 27 37 
+antecedentes familiares de trastorno por consumo de alcohol 
+T1 Clinical_Finding 27 59 
 A1 Implicit_Family_Background T1
 ~~~
 </div>
