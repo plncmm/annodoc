@@ -51,7 +51,7 @@ A1 Negated T1
 Antecedente Familiar Implícito
 ~~~ ann
 antecedentes familiares de trastorno por consumo de alcohol 
-T1 Clinical_Finding 27 59 
+T1 Disease 27 59 
 A1 Implicit_Family_Background T1
 ~~~
 </div>
