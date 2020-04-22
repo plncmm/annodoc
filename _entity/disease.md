@@ -35,7 +35,7 @@ T1 Disease 20 41
 
 ## Caso especial
 
-Los hallazgos clínicos mencionados en los antecedentes familiares de los pacientes, que no estén asignados a un sujeto particular en la oración, deben ser etiquetados como hallazgo clínico con el atributo de “antecedente familiar”.
+Los hallazgos clínicos o enfermedades mencionadas en los antecedentes familiares de los pacientes, que no estén asignados a un sujeto particular en la oración, deben ser etiquetados como hallazgo clínico con el atributo de “antecedente familiar”.
 
 <div class="annotation-correct" markdown="1">
 Negado + Antecedente Familiar Implícito
