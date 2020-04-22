@@ -9,7 +9,7 @@ procedimientos, técnicas o métodos de diagnóstico y tratamientos no medicamen
 
 ## Reglas positivas
 
-* Anotar todos los antecedentes quirúrgicos (agregando el atributo "pasado" cuando sean descritos como antecedentes previos).
+* Anotar todos los antecedentes quirúrgicos.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
@@ -19,7 +19,7 @@ T2 Medical_Procedure 44 59
 ~~~
 </div>
 
-* Anotar todas las frases que describen tratamientos no medicamentosos
+* Anotar todas las frases que describen tratamientos NO medicamentosos
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
@@ -43,6 +43,16 @@ Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
 T1 Medical_Procedure 0 20 
+~~~
+</div>
+
+* Agregar el atributo "waiting" a todos los procedimientos que aun no se han realizado o que están programados.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Paciente a la espera de cirugía dental por…
+T1 Medical_Procedure 24 38 
+A1 waiting T1
 ~~~
 </div>
 
