@@ -136,7 +136,6 @@ T1 Clinical_Finding 0 35
 * NO incluir en las anotaciones de resultados los exámenes de apoyo o procedimientos diagnósticos realizados.
 
 <div class="annotation-incorrect" markdown="1">
-Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
 T1 Clinical_Finding 2 32 
