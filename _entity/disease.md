@@ -10,13 +10,12 @@ Ya que los hallazgos clínicos pueden corresponder a un conjunto muy amplio de c
 ~~~ ann
 PACIENTE SUFRE ATROPELLO EN VIA PUBLICA RESULTANDO CON FRACTURA DIENTE 24 Y 26 AVULSION DIENTE 25 Traumatismo dento alveolar
 T1	Disease 55 70	FRACTURA DIENTE
-T4	Disease 79 94	AVULSION DIENTE
-T6	Disease 98 124	Traumatismo dento alveolar
-T10	Clinical_Finding 55 78	FRACTURA DIENTE 24 Y 26
-T2	Body_Part 110 124	dento alveolar
-T3	Body_Part 88 94;95 97	DIENTE 25
-T7	Clinical_Finding 15 24	ATROPELLO
-T5	Body_Part 64 78	DIENTE 24 Y 26
+T3	Disease 79 94	AVULSION DIENTE
+T5	Disease 98 124	Traumatismo dento alveolar
+T7	Clinical_Finding 55 78	FRACTURA DIENTE 24 Y 26
+T2	Body_Part 88 94;95 97	DIENTE 25
+T6	Clinical_Finding 15 24	ATROPELLO
+T4	Body_Part 64 78	DIENTE 24 Y 26
 ~~~
 Ejemplo de anotación de [Clinical Finding]() y [Disease](). Nótese que la entidad “FRACTURA DIENTE”, que es una enfermedad, puede estar contenida en un hallazgo clínico.
 </div>
