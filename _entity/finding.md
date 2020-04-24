@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: "Clinical Finding"
+title: "Finding"
 shortdef: "Hallazgo clínico y enfermedad"
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "Disease"
-shortdef: "Enfermedades mapeables a un diagnóstico reconocido dentro de terminologías"
+shortdef: "Enfermedades mapeables a un código CIE-10"
 ---
 
 Ya que los hallazgos clínicos pueden corresponder a un conjunto muy amplio de condiciones presentes en el paciente, la tarea de comparar de forma homogénea sus padecimientos puede resultar muy difícil. Por ello, una vez etiquetado un “Hallazgo Clínico” o “Clinical Finding”, se deberán anotar la/las entidades que correspondan a enfermedades mapeables a un diagnóstico reconocido dentro de terminologías de clasificación estándar como la Clasificación Internacional de Enfermedades (CIE-10). El etiquetar enfermedades es un paso muy importante dentro de este trabajo pues nos permitirá, entre otras cosas, identificar comorbilidades en forma automática en una base de datos masiva. En caso de que tenga dudas de si una entidad corresponde o no a una enfermedad, puede en la plataforma BRAT usar la opción “click here to search” bajo “cie-10_norm_db”o si prefiere puede consultar [https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html](https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html).

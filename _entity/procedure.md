@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: "Medical Procedure"
+title: "Procedure"
 shortdef: "Procedimientos diagnósticos, terapéuticos y de laboratorio"
 ---
 
@@ -14,8 +14,8 @@ procedimientos, técnicas o métodos de diagnóstico y tratamientos no medicamen
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Paciente con antecedente de apendicectomía, colecistectomía consulta por…
-T1 Medical_Procedure 28 42 
-T2 Medical_Procedure 44 59 
+T1 Procedure 28 42 
+T2 Procedure 44 59 
 ~~~
 </div>
 
@@ -24,7 +24,7 @@ T2 Medical_Procedure 44 59
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 En tratamiento con fisioterapeuta cada...
-T1 Medical_Procedure 3 33 
+T1 Procedure 3 33 
 ~~~
 </div>
 
@@ -34,7 +34,7 @@ T1 Medical_Procedure 3 33
 Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Medical_Procedure 2 12 
+T1 Procedure 2 12 
 ~~~
 </div>
 
@@ -42,7 +42,7 @@ T1 Medical_Procedure 2 12
 Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
-T1 Medical_Procedure 0 20 
+T1 Procedure 0 20 
 ~~~
 </div>
 
@@ -51,7 +51,7 @@ T1 Medical_Procedure 0 20
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Paciente a la espera de cirugía dental por…
-T1 Medical_Procedure 24 38 
+T1 Procedure 24 38 
 A1 waiting T1
 ~~~
 </div>
@@ -63,7 +63,7 @@ A1 waiting T1
 <div class="annotation-incorrect" markdown="1">
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Medical_Procedure 2 32 
+T1 Procedure 2 32 
 ~~~
 </div>
 
@@ -71,7 +71,7 @@ T1 Medical_Procedure 2 32
 Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
-T1 Medical_Procedure 0 20 
+T1 Procedure 0 20 
 T2 Clinical_Finding 25 38 
 ~~~
 </div>

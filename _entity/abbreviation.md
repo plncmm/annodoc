@@ -4,9 +4,7 @@ title: "Abbreviation"
 shortdef: "Procedimiento lingüístico de hacer más corta la morfología de ciertas palabras"
 ---
 
-## Definición
-
-Abreviación es el procedimiento lingüístico de hacer más corta la morfología de ciertas palabras. Se realiza empleando métodos como:
+Se realiza empleando métodos como:
 
 * Acortamiento: se elimina partes de las palabras al comienzo o al final (ej: "bicicleta" en bici, “autobús” en bus, o algunos más informales como poli por policlínico o refri por refrigerador).
 * Abreviatura: consiste en la representación escrita de una palabra o grupo de palabras con solo una o varias de sus letras. Pueden ser de tipo personal (generadas para uso propio en escritura privada) o convencional (reconocidas y empleadas comúnmente). 
