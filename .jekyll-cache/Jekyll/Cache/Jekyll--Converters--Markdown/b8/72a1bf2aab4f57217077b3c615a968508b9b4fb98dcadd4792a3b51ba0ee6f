@@ -1,0 +1,86 @@
+I"�	<h2 id="reglas-positivas">Reglas positivas</h2>
+
+<ul>
+  <li>Etiquetar todos los familiares consanguíneos y no consanguíneos mencionados</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… primero por su hijo, luego de sus hermanos … 
+T1 Family_Member 17 21 
+T2 Family_Member 36 44 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… a su madre por parte de su cuñado … 
+T1 Family_Member 7 12 
+T2 Family_Member 29 35 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… pero ex esposa refiere que… 
+T1 Family_Member 7 16 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar todas las menciones de antecedentes familiares positivos y negativos en las que no se especifique un miembro de la familia en particular pero exista un sujeto dentro de la oración.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">ANTECEDENTES DE SUICIDIO EN FAMILIA…
+T1 Family_Member 28 35 
+</code></pre>
+</div>
+
+<h2 id="reglas-negativas">Reglas negativas</h2>
+
+<ul>
+  <li>NO incluir en la etiqueta palabras modificadoras de los familiares.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… reciente de abuelo materno, … 
+T1 Family_Member 21 28 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… hija del medio del matrimonio … 
+T1 Family_Member 7 16 
+</code></pre>
+</div>
+
+<ul>
+  <li>Cuando se mencione el lado de la familia (materno o paterno), este NO debe incluirse en la etiqueta, pero debe anotarse como un atributo de la entidad</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… abuelo materno con Diabetes Mellitus tipo 2… 
+T1 Family_Member 2 8 
+A1 Maternal T1
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… abuelo materno con Diabetes Mellitus tipo 2… 
+T1 Family_Member 2 16 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Depresion Abuela, Madre, Tios paternos.
+T1 Family_Member 10 16 
+T2 Family_Member 18 23 
+T3 Family_Member 25 29 
+A1 Paternal T1
+A2 Paternal T2
+A3 Paternal T3
+</code></pre>
+</div>
+
+<p><img src="https://github.com/fvillena/annodoc/raw/master/static/img/image5.jpg" width="100%" /></p>
+
+<p>Ejemplo de anotación de atributos (materno o paterno) en miembros de la familia.</p>
+:ET

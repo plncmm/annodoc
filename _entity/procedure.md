@@ -4,8 +4,7 @@ title: "Procedure"
 shortdef: "Procedimientos diagnósticos, terapéuticos y de laboratorio"
 ---
 
-Dentro de la etiqueta “procedimientos médicos” se anotan todas aquiellas actividades derivadas de la atención y el cuidado de los pacientes, como por ejemplo los
-procedimientos, técnicas o métodos de diagnóstico y tratamientos no medicamentosos.
+Dentro de la etiqueta “Procedure” se anotan todas aquiellas actividades derivadas de la atención y el cuidado de los pacientes, como por ejemplo los procedimientos diagnósticos (exploración por tomografía computarizada), terapéuticos o preventivos que incluyan cualquier tratamiento NO medicamentosos(ejercicio, dieta o psicoterapia) y de laboratorio (hemograma, prueba de tiempo de protrombina).
 
 ## Reglas positivas
 

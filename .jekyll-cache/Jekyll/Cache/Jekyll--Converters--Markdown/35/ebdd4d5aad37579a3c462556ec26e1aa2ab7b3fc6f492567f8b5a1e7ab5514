@@ -1,0 +1,102 @@
+I"Y<p>Pablo Báez-Benavides (1), Fabián Villena (1,2), Manuel Durán (1),  Jocelyn Dunstan (1,2)</p>
+
+<ol>
+  <li>Centro de Informática Médica y Telemedicina, Facultad de Medicina, Universidad de Chile.</li>
+  <li>Centro de Modelamiento Matemático, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile.</li>
+</ol>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>Las fichas clínicas tienen un propósito legal y nemotécnico, pero también pueden ser usados para extraer información, por ejemplo, para fines epidemiológicos. Esto se conoce como “Uso Secundario de los Datos”. El trabajo de etiquetado de entidades médicas tiene como objetivo usar el conocimiento experto para identificar palabras o expresiones que tienen importancia clínica. Con un volumen de texto etiquetado considerable podemos entrenar algoritmos computacionales que realizan esta detección de manera automática.</p>
+
+<p>Este proyecto busca crear el primer cuerpo de texto (corpus) etiquetado con narrativas clínicas producidas en Chile. Esta guía de etiquetado busca apoyar la labor de los(as) etiquetadores(as) y se utilizará el software BRAT que es estándar en el área.</p>
+
+<p>Usando el nombre de usuario y contraseñas dadas por el equipo busque la carpeta asignada con su nombre en <a href="http://healthcarex.ml/brat-v1.3_Crunchy_Frog/#/">http://healthcarex.ml/brat-v1.3_Crunchy_Frog/#/</a>. Seleccione el primer archivo en donde leerá una narrativa clínica. Al seleccionar una o más palabras, el software automáticamente le ofrecerá el menú mostrado abajo de entidades médicas y atributos. Cada uno de estos elementos son explicados en detalle más adelante a lo largo de esta guía.</p>
+
+<p><img src="https://github.com/fvillena/annodoc/raw/master/static/img/image2.png" width="100%" /></p>
+
+<p>Cuando se termina el etiquetado de una narrativa dada se puede avanzar a la siguiente apretando la flecha hacia la derecha que se encuentra en la parte superior izquierda de la pantalla. Se puede parar de etiquetar y volver a ello ingresando con su usuario ya que las etiquetas quedan guardadas automáticamente.</p>
+
+<p>El uso de BRAT nos permite comparar etiquetas entre varias personas leyendo las mismas narrativas, por lo que pedimos que trabajen individualmente. En caso de querer aprender más de BRAT puede consultar el manual <a href="brat.nlplab.org/manual.html">brat.nlplab.org/manual.html</a>.</p>
+
+<h2 id="reglas-de-anotación-manual-de-entidades">Reglas de anotación manual de entidades</h2>
+
+<p>La premisa fundamental que rige todas las reglas de anotación en este protocolo es que <strong>se debe anotar la expresión más corta y general posible</strong>, considerando que aún así se debe describir completamente la entidad. En este sentido, las palabras modificadoras deben ser excluidas.
+Las reglas de anotación se pueden clasificar en 4 tipos:</p>
+<ul>
+  <li>Reglas generales (Reglas-G): reglas positivas y negativas que se aplican a todas las etiquetas de menciones, incluyen reglas ortográficas generales.</li>
+  <li>Reglas positivas (Reglas-P): reglas que especifican las entidades que se deben anotar.</li>
+  <li>Reglas negativas (Reglas-N): reglas que especifican las entidades que no hay que anotar.</li>
+  <li>Reglas multipalabra (Regla-M): reglas que especifican si un grupo de palabras debe anotarse bajo una única etiqueta o no.</li>
+</ul>
+
+<h3 id="reglas-generales">Reglas generales</h3>
+
+<ul>
+  <li>
+    <p>No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.</p>
+
+    <ul>
+      <li>Correcto:</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Diagnósticos de ingreso: - Episodio depresivo grave .
+T1 Disease 27 51 
+</code></pre>
+</div>
+
+<ul>
+  <li>Incorrecto:</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Diagnósticos de ingreso: - Episodio depresivo grave .
+T1 Disease 23 52 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… posiblemente secundaria a fluoxetina, que …
+T1 Medication 27 39 
+</code></pre>
+</div>
+
+<ul>
+  <li>No incluir en la etiqueta los espacios ni signos de puntuación que aparezcan antes o después de cada mención.</li>
+</ul>
+
+<h2 id="reglas-específicas">Reglas específicas</h2>
+
+<p>Las reglas asociadas a cada una de las entidades a anotar se encuentran definidas en su respectiva página:</p>
+
+<ul>
+  <li>
+    <p><a href="entity/abbreviation.html">Abbreviation</a>: Procedimiento lingüístico de hacer más corta la morfología de ciertas palabras</p>
+  </li>
+  <li>
+    <p><a href="entity/body_part.html">Body Part</a>: Órgano o una parte anatómica de una persona</p>
+  </li>
+  <li>
+    <p><a href="entity/disease.html">Disease</a>: Enfermedades mapeables a un código CIE-10</p>
+  </li>
+  <li>
+    <p><a href="entity/family_member.html">Family Member</a>: Etiqueta para miembros de la familia</p>
+  </li>
+  <li>
+    <p><a href="entity/finding.html">Finding</a>: Hallazgo clínico y enfermedad</p>
+  </li>
+  <li>
+    <p><a href="entity/medication.html">Medication</a>: Todas las menciones de medicamentos o drogas empleadas</p>
+  </li>
+  <li>
+    <p><a href="entity/procedure.html">Procedure</a>: Procedimientos diagnósticos, terapéuticos y de laboratorio</p>
+  </li>
+  <li>
+    <p><a href="relation/has.html">Has</a>: Relación entre miembro de la familia y enfermedad</p>
+  </li>
+</ul>
+
+:ET

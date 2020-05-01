@@ -1,0 +1,74 @@
+I"�<p>Dentro de la etiqueta “Procedure” se anotan todas aquiellas actividades derivadas de la atención y el cuidado de los pacientes, como por ejemplo los procedimientos diagnósticos (exploración por tomografía computarizada), terapéuticos o preventivos que incluyan cualquier tratamiento NO medicamentosos(ejercicio, dieta o psicoterapia) y de laboratorio (hemograma, prueba de tiempo de protrombina).</p>
+
+<h2 id="reglas-positivas">Reglas positivas</h2>
+
+<ul>
+  <li>Anotar todos los antecedentes quirúrgicos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Paciente con antecedente de apendicectomía, colecistectomía consulta por…
+T1 Procedure 28 42 
+T2 Procedure 44 59 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar todas las frases que describen tratamientos NO medicamentosos</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">En tratamiento con fisioterapeuta cada...
+T1 Procedure 3 33 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar todos los exámenes de apoyo diagnóstico.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">… urocultivo positivo a enteroco ...
+T1 Procedure 2 12 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">Radiografía de tórax con cardiomegalia aparente
+T1 Procedure 0 20 
+</code></pre>
+</div>
+
+<ul>
+  <li>Agregar el atributo “waiting” a todos los procedimientos que aun no se han realizado o que están programados.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Paciente a la espera de cirugía dental por…
+T1 Procedure 24 38 
+A1 waiting T1
+</code></pre>
+</div>
+
+<h2 id="reglas-negativas">Reglas negativas</h2>
+
+<ul>
+  <li>No anotar los resultados de los procedimientos dentro de esta categoría</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… urocultivo positivo a enteroco ...
+T1 Procedure 2 32 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">Radiografía de tórax con cardiomegalia aparente
+T1 Procedure 0 20 
+T2 Clinical_Finding 25 38 
+</code></pre>
+</div>
+:ET

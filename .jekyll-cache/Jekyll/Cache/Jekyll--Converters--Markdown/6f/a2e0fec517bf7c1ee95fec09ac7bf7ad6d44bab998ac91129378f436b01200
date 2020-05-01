@@ -1,0 +1,217 @@
+I"U<p>Se realiza empleando métodos como:</p>
+
+<ul>
+  <li>Acortamiento: se elimina partes de las palabras al comienzo o al final (ej: “bicicleta” en bici, “autobús” en bus, o algunos más informales como poli por policlínico o refri por refrigerador).</li>
+  <li>Abreviatura: consiste en la representación escrita de una palabra o grupo de palabras con solo una o varias de sus letras. Pueden ser de tipo personal (generadas para uso propio en escritura privada) o convencional (reconocidas y empleadas comúnmente).</li>
+  <li>Contracción: se eliminan las letras centrales de la palabra y se dejan solo las letras más representativas (por ejemplo, avda.).</li>
+</ul>
+
+<p>Las abreviaciones incluyen los casos de siglas (creación de palabras a partir de cada letra inicial de los términos principales de una expresión compleja, como por ejemplo <em>ONU</em> por Organización de las Naciones Unidas) y acrónimos (ciertas siglas que llegan a convertirse en vocablos comunes como <em>ovni</em>, <em>pyme</em> y <em>sida</em>).</p>
+
+<h2 id="reglas-positivas">Reglas positivas</h2>
+
+<ul>
+  <li>Etiquetar todas las abreviaciones tanto de tipo personal como convencional.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Antec de repitencia …
+T1 Abbreviation 0 5 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Pcte persiste Psicótico …
+T1 Abbreviation 0 4 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… resulta normal ECG y Ecocardiograma …
+T1 Abbreviation 17 20 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Inicio de quetiapina 25mg
+T1 Abbreviation 23 25 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar las abreviaciones de una letra o símbolo no estándar.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Correcto: se etiquetan tres abreviaciones</p>
+  <pre><code class="language-ann">TUS x OH
+T1 Abbreviation 0 3 
+T2 Abbreviation 4 5 
+T3 Abbreviation 6 8 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto: se etiquetan dos abreviaciones</p>
+  <pre><code class="language-ann">p hep normales
+T1 Abbreviation 0 1 
+T2 Abbreviation 2 5 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto: se etiquetan dos abreviaciones</p>
+  <pre><code class="language-ann">MP  (+)
+T1 Abbreviation 0 2 
+T2 Abbreviation 5 6 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar todos los símbolos de palabras científicas o técnicas formados por letras convencionales que tienen validez internacional: Ag, Fe.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Na 141, K 4.1, Cl 103
+T1 Abbreviation 0 2 
+T2 Abbreviation 8 9 
+T3 Abbreviation 15 17 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar las abreviaciones numéricas ordinales conformadas por números y letras.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">10mo día de hospitalización
+T1 Abbreviation 0 4 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Lorazepam 1/2 ampolla  c/u
+T1 Abbreviation 23 26 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">c/8 horas
+T1 Abbreviation 0 2 
+</code></pre>
+</div>
+
+<h2 id="reglas-negativas">Reglas negativas</h2>
+
+<ul>
+  <li>NO incluir en la etiqueta los puntos, aunque sean puntos abreviativos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Ac. Valproico
+T1 Abbreviation 0 2 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Dra. Juanita Pérez
+T1 Abbreviation 0 3 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… despertó a las 7:00 hrs. Plan: …
+T1 Abbreviation 22 26 
+</code></pre>
+</div>
+
+<ul>
+  <li>NO incluir en la etiqueta los paréntesis u otros separadores que no formen parte de la abreviación.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Trastorno estrés post traumático complejo (DESNOS) 
+T1 Abbreviation 43 49 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Trastorno estrés post traumático complejo (DESNOS) 
+T1 Abbreviation 42 50 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">FP/FR de …
+T1 Abbreviation 0 2 
+T2 Abbreviation 3 5 
+</code></pre>
+</div>
+
+<ul>
+  <li>NO etiquetar abreviaciones correspondientes a nombres o apellidos.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Dra. Juanita Pérez Z. 
+T1 Abbreviation 19 21 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Dra. J. Pérez. 
+T1 Abbreviation 5 7 
+</code></pre>
+</div>
+
+<ul>
+  <li>NO etiquetar las abreviaciones numéricas ordinales convencionales.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">8º día de hospitalización
+T1 Abbreviation 0 2 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Hoy se realizará 3ª sesión de … 
+T1 Abbreviation 17 19 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">22º día de hospitalización
+T1 Abbreviation 0 3 
+</code></pre>
+</div>
+
+<h2 id="reglas-multipalabra">Reglas multipalabra</h2>
+
+<ul>
+  <li>Anotar como una sola mención las abreviaciones que aparecen en el texto separados sólo por espacios o por guiones y que componen una entidad única.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… diagnósticos de TAB I, y sospecha de …
+T1 Abbreviation 18 23 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">…. ERC-IV recientemente pesquisado…. 
+T1 Abbreviation 3 9 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar como una sola mención las abreviaciones que aparecen en el texto aparentemente compuestas por dos palabras pero que componen una entidad única.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… bioquímico destacan hiperCa 10.5, HipoNa 132
+T1 Abbreviation 22 29 
+T2 Abbreviation 36 42 
+</code></pre>
+</div>
+:ET

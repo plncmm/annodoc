@@ -1,0 +1,191 @@
+I"�<p>Dentro de la etiqueta “hallazgos clínicos” se anotan entidades que pueden pertenecer a dos posibles categorías: hallazgos (findings) y enfermedades (diseases/disorders):</p>
+
+<ul>
+  <li>Hallazgos: se definen como observaciones, juicios o evaluaciones sobre los pacientes y cumplen los siguientes criterios:
+    <ul>
+      <li>Los hallazgos pueden ser normales (pero no necesariamente); ninguna enfermedad puede serlo.</li>
+      <li>Algunos hallazgos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero); las enfermedades no pueden.</li>
+    </ul>
+  </li>
+  <li>Enfermedades: es una subclase incluida en los hallazgos que a menudo corresponde al diagnóstico, y debe cumplir con los siguientes criterios:
+    <ul>
+      <li>Las enfermedades son necesariamente anormales.</li>
+      <li>Tienen persistencia temporal, con la posibilidad (al menos teórica) de que sus manifestaciones sean tratadas, en remisión o en reposo, aunque el trastorno en sí todavía esté presente.</li>
+      <li>Tienen necesariamente un proceso patológico subyacente.</li>
+      <li>Pueden verificarse y asociarse con un código CIE-10.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="reglas-positivas">Reglas positivas</h2>
+
+<ul>
+  <li>Etiquetar palabras o frases que nombran anormalidades anatómicas u otros tipos de alteraciones clínicas, sin llegar a ser un síndrome o una enfermedad.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Paciente con juicio de la realidad alterado asociado a fiebre
+T1 Clinical_Finding 13 43 
+T2 Clinical_Finding 55 61 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Dolor abdominal intenso migrante que impide la marcha
+T1 Clinical_Finding 0 15 
+</code></pre>
+</div>
+
+<ul>
+  <li>Los antecedentes de enfermedades pasadas, que el paciente ya no tenga, se incluyen como hallazgo.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Paciente con antecedentes de Osteomielitis por S. Aureus.
+T1 Clinical_Finding 29 56 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar todas las menciones que indiquen ausencia de hallazgos patológicos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Evoluciona hemodinámicamente estable, afebril…
+T1 Clinical_Finding 11 36 
+T2 Clinical_Finding 38 45 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Ha estado de buen animo…
+T1 Clinical_Finding 13 23 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar dentro de esta categoría las frases que describen hábitos de consumo.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Consumo de alcohol: +, conusmo de cigarro: - ....
+T1 Clinical_Finding 11 21 
+T2 Clinical_Finding 34 44 
+</code></pre>
+</div>
+
+<ul>
+  <li>Incluir en las etiquetas la duración de los hallazgos clínicos sólo cuando sea un atributo inherente del proceso patológico en sí.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Es un atributo inherente del proceso patológico en sí.</p>
+  <pre><code class="language-ann">Dolor crónico de articulaciones interfalángicas
+T1 Clinical_Finding 0 13 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… dx psiquiátricos de TAB de larga data…
+T1 Clinical_Finding 22 39 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar frases que describen el resultado de tratamientos medicamentosos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
+T1 Clinical_Finding 37 65 
+</code></pre>
+</div>
+
+<ul>
+  <li>Los resultados de exámenes de apoyo diagnóstico deben ser anotados como hallazgos clínicos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">… urocultivo positivo a enteroco ...
+T1 Clinical_Finding 13 32 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">Presencia de E. coli en la orina
+T1 Clinical_Finding 13 32 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">Radiografía de tórax con cardiomegalia aparente
+T1 Clinical_Finding 25 38 
+</code></pre>
+</div>
+
+<h2 id="reglas-negativas">Reglas negativas</h2>
+
+<ul>
+  <li>No anotar tratamientos medicamentosos como hallazgos clínicos.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
+T1 Clinical_Finding 0 35 
+</code></pre>
+</div>
+
+<ul>
+  <li>NO incluir en las anotaciones de resultados los exámenes de apoyo o procedimientos diagnósticos realizados.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… urocultivo positivo a enteroco ...
+T1 Clinical_Finding 2 32 
+</code></pre>
+</div>
+
+<ul>
+  <li>NO anotar los atributos dimensionales del hallazgo clínico.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">se observa nódulo pulmonar de 15x 16 mm.
+T1 Clinical_Finding 11 26 
+</code></pre>
+</div>
+
+<ul>
+  <li>NO etiquetar trastornos expresados como la identidad o atributo de un objeto.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Medidas generales Régimen diabético
+T1 Clinical_Finding 26 35 
+</code></pre>
+</div>
+
+<h2 id="reglas-multipalabra">Reglas multipalabra</h2>
+
+<ul>
+  <li>Etiquetar como una sola entidad los hallazgos clínicos compuestos por más de una palabra y que estén relacionados con la misma manifestación u observación clínica.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Correcto: una entidad</p>
+  <pre><code class="language-ann">Orientado en tiempo, espacio, persona.
+T1 Clinical_Finding 0 37 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto: dos entidades</p>
+  <pre><code class="language-ann">Vigil, atenta invierte series simples
+T1 Clinical_Finding 0 5 
+T2 Clinical_Finding 7 37 
+</code></pre>
+</div>
+:ET

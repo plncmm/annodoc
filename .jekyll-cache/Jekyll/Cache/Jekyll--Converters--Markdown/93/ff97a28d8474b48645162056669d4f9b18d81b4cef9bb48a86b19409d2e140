@@ -1,0 +1,139 @@
+I"�<p>Un parte del cuerpo se considera como un órgano o una parte anatómica de una persona.  También puede definirse como una colección de células y tejidos que están localizados en un área específica o que combinan y llevan a cabo una o más funciones especializadas de un organismo. Se incluyen tanto estructuras gruesas como pequeños componentes de órganos complejos. Se aceptan los términos que describen la parte del cuerpo. Algunas palabras como “proximal”, “descendente”, “ascendente” indican una parte del cuerpo  y deben ser anotadas si referencian la parte específica del mismo (Ej. colon proximal)</p>
+
+<h2 id="reglas-positivas">Reglas positivas</h2>
+
+<ul>
+  <li>Etiquetar todas las estructuras corporales que pueden definirse anatómicamente.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… secundario a prurito en piernas …
+T1 Body_Part 26 33 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… no se asocia a lesiones en la piel.
+T1 Body_Part 32 36 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… endometrio engrosado para edad.
+T1 Body_Part 2 12 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto: dos etiquetas separadas</p>
+  <pre><code class="language-ann">Cabeza y cuello: Normocraneo…
+T1 Body_Part 0 6 
+T2 Body_Part 9 15 
+</code></pre>
+</div>
+
+<ul>
+  <li>Etiquetar las partes del cuerpo cuando forman parte de un problema médico.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Hígado graso, 
+T1 Body_Part 0 6 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Cáncer de estómago
+T1 Body_Part 10 18 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Dolor en epigastrio
+T1 Body_Part 9 19 
+</code></pre>
+</div>
+
+<h2 id="reglas-negativas">Reglas negativas</h2>
+
+<ul>
+  <li>NO etiquetar los casos en los que la estructura corporal se utiliza en sentido figurado.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… no tomar la solución en sus manos.
+T1 Body_Part 30 35 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… voces que escucha dentro de su cabeza.
+T1 Body_Part 33 39 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… “un click habia hecho en la cabeza”.
+T1 Body_Part 30 36 
+</code></pre>
+</div>
+
+<ul>
+  <li>No etiquetar las partes del cuerpo cuando son usados como adjetivos.</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Lupus cutáneo inactivo…
+T1 Body_Part 6 13 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Expresión facial fija y postura corporal fijas.
+T1 Body_Part 10 16 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Lesión corneal…
+T1 Body_Part 7 14 
+</code></pre>
+</div>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">Dolor abdominal ...
+T1 Body_Part 6 15 
+</code></pre>
+</div>
+
+<h2 id="reglas-multipalabra">Reglas multipalabra</h2>
+
+<ul>
+  <li>Etiquetar como una sola entidad las partes del cuerpo en las que se precisa su localización.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Leiomiosarcoma muslo derecho con metástasis pulmonares
+T1 Body_Part 15 28 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Diverticulosis severa de colon sigmoides.
+T1 Body_Part 25 40 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">… falanges distales 4 dedos mano izq.
+T1 Body_Part 2 19 
+T2 Body_Part 22 36 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Extremidades inferiores: Pulsos pedios presentes… 
+T1 Body_Part 0 23 
+</code></pre>
+</div>
+:ET
