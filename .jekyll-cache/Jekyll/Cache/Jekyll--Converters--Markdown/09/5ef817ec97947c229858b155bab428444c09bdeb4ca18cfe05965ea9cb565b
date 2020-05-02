@@ -1,0 +1,84 @@
+I"�<p>Dentro de la etiqueta “Procedure” se anotan todas aquellas actividades derivadas de la atención y el cuidado de los pacientes. Existen tres categorías de entidades dentro de esta etiqueta:</p>
+
+<ul>
+  <li>Procedimientos Diagnósticos: todos los exámenes que permiten determinar la condición del individuo (ej. exploración por tomografía computarizada)</li>
+  <li>Procedimientos Terapéuticos o Preventivos: incluye cualquier actividad o tratamiento - incluso de tipo quirúrgico, quimio/radioterapéutico - que es empleado para prevenir, reparar, eliminar o curar la enfrmedad del individuo (ej. ejercicio, dieta, psicoterapia). Se excluyen de esta categoría las intervenciones de tipo medicamentoso.</li>
+  <li>Procedimientos de Laboratorio: todos los exámenes que se realizan en diversas muestras de pacientes que permiten diagnosticar enfermedades mediante la detección de biomarcadores y otros parámetros. Se consideran los análisis de sangre, orina, y otros fluidos y tejidos que emplean métodos bioquímicos, microbiológicos y/o citológicos (ej. hemograma, prueba de tiempo de protrombina).</li>
+</ul>
+
+<h2 id="reglas-positivas">Reglas positivas</h2>
+
+<ul>
+  <li>Anotar todos los antecedentes quirúrgicos como Procedimientos Terapéuticos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Paciente con antecedente de apendicectomía, colecistectomía consulta por…
+T1 Therapeutic_Procedure 28 42 
+T2 Therapeutic_Procedure 44 59 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar todas las frases que describen tratamientos NO medicamentosos como Procedimientos Terapéuticos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">En tratamiento con fisioterapeuta cada...
+T1 Therapeutic_Procedure 3 33 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar todos los exámenes de laboratorio como Procedimientos de Laboratorio.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">… urocultivo positivo a enteroco ...
+T1 Laborathory_Procedure 2 12 
+</code></pre>
+</div>
+
+<ul>
+  <li>Anotar todos los exámenes de apoyo diagnóstico como Procedimientos Diagnósticos.</li>
+</ul>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">Radiografía de tórax con cardiomegalia aparente
+T1 Diagnostic_Procedure 0 20 
+</code></pre>
+</div>
+
+<ul>
+  <li>Agregar el atributo “waiting” a todos los procedimientos que aun no se han realizado o que están programados.</li>
+</ul>
+
+<div class="annotation-correct">
+  <pre><code class="language-ann">Paciente a la espera de cirugía dental por…
+T1 Therapeutic_Procedure 24 38 
+A1 waiting T1
+</code></pre>
+</div>
+
+<h2 id="reglas-negativas">Reglas negativas</h2>
+
+<ul>
+  <li>No anotar los resultados de los procedimientos dentro de esta categoría</li>
+</ul>
+
+<div class="annotation-incorrect">
+  <pre><code class="language-ann">… urocultivo positivo a enteroco ...
+T1 Laborathory_Procedure 2 32 
+</code></pre>
+</div>
+
+<div class="annotation-correct">
+  <p>Correcto</p>
+  <pre><code class="language-ann">Radiografía de tórax con cardiomegalia aparente
+T1 Diagnostic_Procedure 0 20 
+T2 Finding 25 38 
+</code></pre>
+</div>
+:ET
