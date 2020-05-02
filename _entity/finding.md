@@ -4,16 +4,10 @@ title: "Finding"
 shortdef: "Hallazgo clínico y enfermedad"
 ---
 
-Dentro de la etiqueta “hallazgos clínicos” se anotan entidades que pueden pertenecer a dos posibles categorías: hallazgos (findings) y enfermedades (diseases/disorders):
-
-* Hallazgos: se definen como observaciones, juicios o evaluaciones sobre los pacientes y cumplen los siguientes criterios:
-  * Los hallazgos pueden ser normales (pero no necesariamente); ninguna enfermedad puede serlo.
-  * Algunos hallazgos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero); las enfermedades no pueden.
-* Enfermedades: es una subclase incluida en los hallazgos que a menudo corresponde al diagnóstico, y debe cumplir con los siguientes criterios:
-  * Las enfermedades son necesariamente anormales.
-  * Tienen persistencia temporal, con la posibilidad (al menos teórica) de que sus manifestaciones sean tratadas, en remisión o en reposo, aunque el trastorno en sí todavía esté presente.
-  * Tienen necesariamente un proceso patológico subyacente.
-  * Pueden verificarse y asociarse con un código CIE-10.
+Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero).
+Además, dentro de la etiqueta “Findings” se pueden anotar entidades que pueden pertenecer a dos posibles categorías: 
+  * Signos o síntomas: los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. 
+  * Resultados de exámenes de laboratorio u otras pruebas: Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico).
 
 ## Reglas positivas
 
@@ -96,13 +90,13 @@ T1 Clinical_Finding 37 65
 ~~~
 </div>
 
-* Los resultados de exámenes de apoyo diagnóstico deben ser anotados como hallazgos clínicos.
+* Los resultados de exámenes de apoyo diagnóstico deben ser anotados como Resultados de Laboratorio u otras Pruebas.
 
 <div class="annotation-correct" markdown="1">
 Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Clinical_Finding 13 32 
+T1 Laboratory_or_Test_Result Clinical_Finding 13 32 
 ~~~
 </div>
 
@@ -110,7 +104,7 @@ T1 Clinical_Finding 13 32
 Correcto
 ~~~ ann
 Presencia de E. coli en la orina
-T1 Clinical_Finding 13 32 
+T1 Laboratory_or_Test_Result 13 32 
 ~~~
 </div>
 
@@ -118,7 +112,7 @@ T1 Clinical_Finding 13 32
 Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
-T1 Clinical_Finding 25 38 
+T1 Laboratory_or_Test_Result 25 38 
 ~~~
 </div>
 
@@ -138,16 +132,16 @@ T1 Clinical_Finding 0 35
 <div class="annotation-incorrect" markdown="1">
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Clinical_Finding 2 32 
+T1 Laboratory_or_Test_Result 2 32 
 ~~~
 </div>
 
 * NO anotar los atributos dimensionales del hallazgo clínico.
 
-<div class="annotation-correct" markdown="1">
+<div class="annotation-incorrect" markdown="1">
 ~~~ ann
 se observa nódulo pulmonar de 15x 16 mm.
-T1 Clinical_Finding 11 26 
+T1 Laboratory_or_Test_Result 11 39 
 ~~~
 </div>
 

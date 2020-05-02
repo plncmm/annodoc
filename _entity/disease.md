@@ -3,8 +3,10 @@ layout: entry
 title: "Disease"
 shortdef: "Enfermedades mapeables a un código CIE-10"
 ---
+ 
+ Dentro de esta categoría se anotan las entidades que correspondan a enfermedades mapeables a un diagnóstico reconocido dentro de la terminología de clasificación estándar CIE-10 (Clasificación Internacional de Enfermedades). 
 
-Ya que los hallazgos clínicos pueden corresponder a un conjunto muy amplio de condiciones presentes en el paciente, la tarea de comparar de forma homogénea sus padecimientos puede resultar muy difícil. Por ello, una vez etiquetado un “Hallazgo Clínico” o “Clinical Finding”, se deberán anotar la/las entidades que correspondan a enfermedades mapeables a un diagnóstico reconocido dentro de terminologías de clasificación estándar como la Clasificación Internacional de Enfermedades (CIE-10). El etiquetar enfermedades es un paso muy importante dentro de este trabajo pues nos permitirá, entre otras cosas, identificar comorbilidades en forma automática en una base de datos masiva. En caso de que tenga dudas de si una entidad corresponde o no a una enfermedad, puede en la plataforma BRAT usar la opción “click here to search” bajo “cie-10_norm_db”o si prefiere puede consultar [https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html](https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html).
+ El etiquetar enfermedades es un paso muy importante dentro de este trabajo pues nos permitirá, entre otras cosas, identificar comorbilidades en forma automática en una base de datos masiva. En caso de que tenga dudas de si una entidad corresponde o no a una enfermedad, puede en la plataforma BRAT usar la opción “click here to search” bajo “cie-10_norm_db”o si prefiere puede consultar [https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html](https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html).
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
@@ -12,15 +14,13 @@ PACIENTE SUFRE ATROPELLO EN VIA PUBLICA RESULTANDO CON FRACTURA DIENTE 24 Y 26 A
 T1	Disease 55 70	FRACTURA DIENTE
 T3	Disease 79 94	AVULSION DIENTE
 T5	Disease 98 124	Traumatismo dento alveolar
-T7	Clinical_Finding 55 78	FRACTURA DIENTE 24 Y 26
-T2	Body_Part 88 94;95 97	DIENTE 25
+T2	Body_Part 88 97	DIENTE 25
 T6	Clinical_Finding 15 24	ATROPELLO
 T4	Body_Part 64 78	DIENTE 24 Y 26
 ~~~
-Ejemplo de anotación de [Clinical Finding]() y [Disease](). Nótese que la entidad “FRACTURA DIENTE”, que es una enfermedad, puede estar contenida en un hallazgo clínico.
-</div>
+Ejemplo de anotación de [Finding]() y [Disease]().
 
-Las reglas positivas, negativas y multipalabra de anotación de [Clinical Finding]() se aplican también para la anotación de [Disease]().
+</div>
 
 ## Reglas positivas
 
