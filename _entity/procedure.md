@@ -4,7 +4,11 @@ title: "Procedure"
 shortdef: "Procedimientos diagnósticos, terapéuticos y de laboratorio"
 ---
 
-Dentro de la etiqueta “Procedure” se anotan todas aquiellas actividades derivadas de la atención y el cuidado de los pacientes, como por ejemplo los procedimientos diagnósticos (exploración por tomografía computarizada), terapéuticos o preventivos que incluyan cualquier tratamiento NO medicamentosos(ejercicio, dieta o psicoterapia) y de laboratorio (hemograma, prueba de tiempo de protrombina).
+Dentro de la etiqueta “Procedure” se anotan todas aquiellas actividades derivadas de la atención y el cuidado de los pacientes. Existen tres categorías de entidades dentro de esta etiqueta: 
+
+- Procedimientos diagnósticos: todos los exámenes que permiten determinar la condición del individuo (ej. exploración por tomografía computarizada) 
+- Procedimientos terapéuticos o preventivos: incluye cualquier actividad o tratamiento incluso de tipo quirúrgico, empleado para prevenir, reparar, eliminar o curar la enfrmedad del individuo (ej. ejercicio, dieta o psicoterapia). Se excluyen de esta categoría las intervenciones de tipo medicamentoso. 
+- Procedimientos de laboratorio: todos los exámenes que se realizan en diversas muestras de pacientes que permiten diagnosticar enfermedades mediante la detección de biomarcadores y otros parámetros. Se consideran los análisis de sangre, orina, y otros fluidos y tejidos que emlean métodos bioquímicos, microbiológicos y/o citológicos (ej. hemograma, prueba de tiempo de protrombina).
 
 ## Reglas positivas
 
