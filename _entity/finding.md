@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "Finding"
-shortdef: "Hallazgo clínico y enfermedad"
+shortdef: "Hallazgo, Signos o Síntomas y Resultados de laboratorio u otras pruebas"
 ---
 
 Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero).
