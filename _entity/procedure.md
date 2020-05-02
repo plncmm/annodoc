@@ -77,6 +77,6 @@ Correcto
 ~~~ ann
 Radiografía de tórax con cardiomegalia aparente
 T1 Diagnostic_Procedure 0 20 
-T2 Finding 25 38 
+T2 Clinical_Finding 25 38 
 ~~~
 </div>
