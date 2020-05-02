@@ -96,7 +96,7 @@ T1 Clinical_Finding 37 65
 Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Laboratory_or_Test_Result Clinical_Finding 13 32 
+T1 Laboratory_or_Test_Result 13 32 
 ~~~
 </div>
 
