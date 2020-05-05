@@ -5,9 +5,10 @@ shortdef: "Hallazgo, Signos o Síntomas y Resultados de laboratorio u otras prue
 ---
 
 Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero).
-Además, dentro de la etiqueta “Findings” se pueden anotar entidades que pueden pertenecer a dos posibles categorías: 
-  * Signos o síntomas: los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. 
-  * Resultados de exámenes de laboratorio u otras pruebas: Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico).
+Además, dentro de la etiqueta “Findings” se pueden anotar **dos sub-entidades** que pueden pertenecer a esta categoría: 
+
+  * **Signos o síntomas:** los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. 
+  * **Resultados de exámenes de laboratorio u otras pruebas:** Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico).
 
 ## Reglas positivas
 
