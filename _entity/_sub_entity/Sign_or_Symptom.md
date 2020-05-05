@@ -18,14 +18,14 @@ Además, dentro de la etiqueta “Findings” se pueden anotar **dos sub-entidad
 ~~~ ann
 Paciente con juicio de la realidad alterado asociado a fiebre
 T1 Clinical_Finding 13 43 
-T2 Sign_or_Symptom 55 61 
+T2 Clinical_Finding 55 61 
 ~~~
 </div>
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Dolor abdominal intenso migrante que impide la marcha
-T1 Sign_or_Symptom 0 15 
+T1 Clinical_Finding 0 15 
 ~~~
 </div>
 
