@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: "Sign%20or%20Symptom"
+title: "Sign or Symptom"
 shortdef: "Manifestaciones objetivas y subjetivas respectivamente"
 ---
 
