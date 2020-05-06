@@ -9,7 +9,7 @@ Además, dentro de la etiqueta “Findings” se pueden anotar **dos subentidade
 
   * **Signos o síntomas:** los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. Vea las reglas de anotación de ésta subentidad [aquí](Sign|Symptom)
 
-  * **Resultados de exámenes de laboratorio u otras pruebas:** Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico). Vea las reglas de anotación de ésta subentidad [aquí](Laboratory|TestR)
+  * **Resultados de exámenes de laboratorio u otras pruebas:** Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico). Vea las reglas de anotación de ésta subentidad [aquí](`Laboratory|TestR`)
 
 A continuación se encuentran las reglas de anotación de Findings que NO corresponden a ninguna de las dos subentidades anteriores.
 
