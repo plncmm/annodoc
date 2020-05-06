@@ -65,11 +65,29 @@ T1 Medication 27 39
 
 ## Reglas específicas
 
+{% for c in site.collections %}
+* <b>Collection</b>: {{ c.label }}
+  {% for d in c.docs %}
+  * [{{ d.title }}]({{ d.url | remove_first:'/' }}): {{ d.shortdef }}
+  {% endfor %}
+{% endfor %}
+
+
 Las reglas asociadas a cada una de las entidades a anotar se encuentran definidas en su respectiva página:
 
-{% for e in site.entity %}
-* [{{ e.title }}]({{ e.url | remove_first:'/' }}): {{ e.shortdef }}
-{% endfor %}
-{% for r in site.relation %}
-* [{{ r.title }}]({{ r.url | remove_first:'/' }}): {{ r.shortdef }}
-{% endfor %}
+* **Entidades**
+  {% for e in site.entity %}
+  * [{{ e.title }}]({{ e.url | remove_first:'/' }}): {{ e.shortdef }}
+  {% endfor %}
+
+* **Atributos**
+  {% for a in site.Attributes %}
+  * [{{ a.title }}]({{ a.url | remove_first:'/' }}): {{ a.shortdef }}
+  {% endfor %}
+
+* **Relaciones**
+  {% for r in site.relation %}
+  * [{{ r.title }}]({{ r.url | remove_first:'/' }}): {{ r.shortdef }}
+  {% endfor %}
+
+

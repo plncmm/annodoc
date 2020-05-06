@@ -53,6 +53,14 @@ T1 Disease 22 39
 ~~~
 </div>
 
+* NO etiquetar como enfermedad las expresiones que describen identidad o atributo de un objeto.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Medidas generales Régimen diabético
+T1 Clinical_Finding 26 35 
+~~~
+</div>
 
 ## Caso especial
 

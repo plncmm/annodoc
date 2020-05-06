@@ -24,7 +24,14 @@ homeurl: "https://fvillena.github.io/annodoc/"
 # Collection settings
 
 collections:
+  attributes:
+    output: true
   entity:
     output: true
+  finding:
+    output: false
+  procedure:
+    output: false
   relation:
     output: true
+
