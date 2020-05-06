@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: "Laboratory|TestR"
+title: "Laboratory_Test_Result"
 shortdef: "Resultados de un exámen de apoyo diagnóstico"
 ---
 
