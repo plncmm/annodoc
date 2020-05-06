@@ -33,5 +33,5 @@ collections:
   procedure:
     output: false
   relation:
-    output: true
+    output: false
 
