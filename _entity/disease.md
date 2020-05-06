@@ -33,6 +33,27 @@ T1 Disease 20 41
 ~~~
 </div>
 
+## Reglas negativas
+
+* NO anotar los agentes causales como parte de la enfermedad.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Paciente con antecedentes de Osteomielitis por S. Aureus.
+T1 Disease 29 56 
+~~~
+</div>
+
+* NO incluir en las etiquetas la duración de las enfermedades, salvo cuando sea un atributo inherente del proceso patológico en sí.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+… dx psiquiátricos de TAB de larga data…
+T1 Disease 22 39 
+~~~
+</div>
+
+
 ## Caso especial
 
 Los hallazgos clínicos o enfermedades mencionadas en los antecedentes familiares de los pacientes, que no estén asignados a un sujeto particular en la oración, deben ser etiquetados como hallazgo clínico con el atributo de “antecedente familiar”.

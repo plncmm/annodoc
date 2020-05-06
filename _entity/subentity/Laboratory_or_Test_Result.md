@@ -1,17 +1,10 @@
 ---
 layout: entry
-title: "Finding"
-shortdef: "Hallazgo, Signos o Síntomas y Resultados de laboratorio u otras pruebas"
+title: "Laboratory or Test Result"
+shortdef: "Resultados de un exámen de apoyo diagnóstico"
 ---
 
-Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero).
-Además, dentro de la etiqueta “Findings” se pueden anotar **dos subentidades**: 
-
-  * **Signos o síntomas:** los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. Vea las reglas de anotación de ésta subentidad [aquí](subentity/Sign_or_Symptom.md)
-
-  * **Resultados de exámenes de laboratorio u otras pruebas:** Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico). Vea las reglas de anotación de ésta subentidad [aquí](subentity/Laboratory_or_Test_Result.md)
-
-A continuación se encuentran las reglas de anotación de Findings que NO corresponden a ninguna de las dos subentidades anteriores.
+# Reglas de anotación para Resultados de exámenes de laboratorio u otras pruebas 
 
 ## Reglas positivas
 
@@ -19,8 +12,25 @@ A continuación se encuentran las reglas de anotación de Findings que NO corres
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
-Paciente con juicio de la realidad alterado asociado a...
+Paciente con juicio de la realidad alterado asociado a fiebre
 T1 Clinical_Finding 13 43 
+T2 Clinical_Finding 55 61 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Dolor abdominal intenso migrante que impide la marcha
+T1 Clinical_Finding 0 15 
+~~~
+</div>
+
+* Los antecedentes de enfermedades pasadas, que el paciente ya no tenga, se incluyen como hallazgo.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Paciente con antecedentes de Osteomielitis por S. Aureus.
+T1 Clinical_Finding 29 56 
 ~~~
 </div>
 
@@ -51,13 +61,29 @@ T2 Clinical_Finding 34 44
 ~~~
 </div>
 
-* Anotar como Finding las frases que describen el resultado de tratamientos medicamentosos (pero no el tratamiento en sí).
+* Incluir en las etiquetas la duración de los hallazgos clínicos sólo cuando sea un atributo inherente del proceso patológico en sí.
+
+<div class="annotation-correct" markdown="1">
+Es un atributo inherente del proceso patológico en sí.
+~~~ ann
+Dolor crónico de articulaciones interfalángicas
+T1 Clinical_Finding 0 13 
+~~~
+</div>
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+… dx psiquiátricos de TAB de larga data…
+T1 Clinical_Finding 22 39 
+~~~
+</div>
+
+* Anotar frases que describen el resultado de tratamientos medicamentosos.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
-T1 Clinical_Finding 37 65
-A1 Negated T1 
+T1 Clinical_Finding 37 65 
 ~~~
 </div>
 
@@ -67,8 +93,7 @@ A1 Negated T1
 Correcto
 ~~~ ann
 … urocultivo positivo a enteroco ...
-T1 Laborathory_Procedure 2 12 
-T2 Laboratory_or_Test_Result 13 32 
+T1 Laboratory_or_Test_Result 13 32 
 ~~~
 </div>
 
@@ -96,15 +121,6 @@ T1 Laboratory_or_Test_Result 25 38
 ~~~ ann
 Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
 T1 Clinical_Finding 0 35 
-~~~
-</div>
-
-* NO incluir en la anotación la duración de los hallazgos.
-
-<div class="annotation-incorrect" markdown="1">
-~~~ ann
-refiere consumo de tabaco de larga data…
-T1 Clinical_Finding 8 39 
 ~~~
 </div>
 

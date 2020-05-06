@@ -26,5 +26,7 @@ homeurl: "https://fvillena.github.io/annodoc/"
 collections:
   entity:
     output: true
+    subentity:
+      output: true
   relation:
     output: true
