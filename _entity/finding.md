@@ -7,9 +7,9 @@ shortdef: "Hallazgo, Signos o Síntomas y Resultados de laboratorio u otras prue
 Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero).
 Además, dentro de la etiqueta “Findings” se pueden anotar **dos subentidades**: 
 
-  * **Signos o síntomas:** los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. Vea las reglas de anotación de ésta subentidad [aquí](entity/Sign_or_Symptom.md)
+  * **Signos o síntomas:** los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. Vea las reglas de anotación de ésta subentidad [aquí](Sign_or_Symptom.md)
 
-  * **Resultados de exámenes de laboratorio u otras pruebas:** Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico). Vea las reglas de anotación de ésta subentidad [aquí](entity/Laboratory_or_Test_Result.md)
+  * **Resultados de exámenes de laboratorio u otras pruebas:** Cualquier medición o evaluación obtenida a partir de un exámen de apoyo diagnóstico (Ej. laboratorio, imagenológico). Vea las reglas de anotación de ésta subentidad [aquí](Laboratory_or_Test_Result.md)
 
 A continuación se encuentran las reglas de anotación de Findings que NO corresponden a ninguna de las dos subentidades anteriores.
 
