@@ -9,7 +9,7 @@ La negación es elemento lingüístico que sirve para negar una oracion o un ele
 <div class="annotation-correct" markdown="1">
 ~~~ ann
 Tratamiento con 3 antihipertensivos, sin respuesta al tratamiento derivó...
-T1 Clinical_Finding 37 65 
+T1 Clinical_Finding 41 65 
 A1 Negated T1 
 ~~~
 </div>

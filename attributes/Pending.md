@@ -4,7 +4,7 @@ title: "Pending"
 shortdef: "Procedimientos sin realizar"
 ---
 
-El atributo "pending" fue implementado en este proyecto con el fin de identificar todos aquellos procedimientos que puden identificarse textualmente como procedimientos no realizados o que están programados, tal como se muestra en el siguiente ejemplo:
+El atributo "pending" fue implementado en este proyecto con el fin de identificar todos aquellos procedimientos que explicitamente puden clasificarse como procedimientos no realizados o que están programados, tal como se muestra en el siguiente ejemplo:
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
