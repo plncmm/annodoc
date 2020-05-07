@@ -78,6 +78,9 @@ Las reglas asociadas a cada una de las entidades a anotar se encuentran definida
   {% endfor %}
 
 * **Atributos**
+  * [Negated](attributes/Negated)
+  * [Pending](attributes/Pending)
+  
   {% for t in site.attributes %}
   * [{{ t.title }}]({{ t.url | remove_first:'/' }}): {{ t.shortdef }}
   {% endfor %}
