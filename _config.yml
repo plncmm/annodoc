@@ -27,10 +27,10 @@ collections:
   entity:
     output: true
   finding:
-    output: false
+    output: true
   procedure:
-    output: false
+    output: true
   relation:
     output: true
-  attributes:
+  ent_attributes:
     output: true
