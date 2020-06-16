@@ -78,6 +78,10 @@ Las reglas asociadas a cada una de las entidades a anotar se encuentran definida
   {% endfor %}
 
 * **Atributos**
+  {% for a in site.ent_attributes %}
+  * [{{ a.title }}]({{ a.url | remove_first:'/' }}): {{ a.shortdef }}
+  {% endfor %}
+
   * [Negated](ent_attributes/negated): Negación de entidades
   * [Pending](ent_attributes/pending): Procedimientos sin realizar
   
