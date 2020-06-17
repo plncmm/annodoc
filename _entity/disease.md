@@ -10,7 +10,7 @@ Dentro de la categoría *Disease* se anotan las entidades que correspondan a enf
 
  El etiquetar enfermedades es un paso muy importante dentro de este trabajo pues nos permitirá, entre otras cosas, identificar comorbilidades en forma automática en una base de datos masiva. En caso de que tenga dudas de si una entidad corresponde o no a una enfermedad, puede en la plataforma BRAT usar la opción “click here to search” bajo “cie-10_norm_db”o si prefiere puede consultar [https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html](https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html).
 
-Tenga en cuenta sin embargo, que dentro del CIE-10 también se encuentran algunos diagnósticos que no necesariamente corresponden a enfermedades (ej: embarazo), ademas de sígnos y síntomas, los cuales deben anotarse en otra categoría de entidades. En este sentido, se deberá poner a prueba si es que una entidad con código CIE-10 cualifica o no dentro de la categoría *Disease*.
+Tenga en cuenta sin embargo, que dentro del CIE-10 también se encuentran algunos diagnósticos que no necesariamente corresponden a enfermedades (ej: embarazo), ademas de sígnos y síntomas, los cuales deben anotarse en otra categoría de entidades. En este sentido, se deberá poner a prueba si es que una entidad con código CIE-10 cualifica o no dentro de la categoría *Disease*, empleando para ello fuentes de conocimiento médico adicionales en caso de que sea necesario.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
