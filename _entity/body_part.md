@@ -118,6 +118,23 @@ T1 Body_Part 6 15
 ~~~
 </div>
 
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Desdentamiento total bimaxilar
+T1 Body_Part 21 30 
+~~~
+</div>
+
+*  No anotar las parte del cuerpo que aparecen en abreviaturas aunque se puedan inferir.
+
+<div class="annotation-incorrect" markdown="1">
+Incorrecto: se anota como parte del cuerpo la abreviación de Núcleo Pulposo.
+~~~ ann
+Paciente consulta por antecedente de HNP
+T1 Body_Part 38 40 
+~~~
+</div>
+
 ## Reglas multipalabra
 
 * Etiquetar como una sola entidad las partes del cuerpo en las que se precisa su localización.

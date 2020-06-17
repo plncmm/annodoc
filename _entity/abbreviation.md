@@ -108,6 +108,37 @@ T1 Abbreviation 0 2
 ~~~
 </div>
 
+* Anotar los antecedentes gineco-obstetricos como abreviaturas sin incluir la numeración.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+G3 P1 A1
+T1 Abbreviation 0 1 
+T2 Abbreviation 3 4 
+T3 Abbreviation 6 7 
+~~~
+</div>
+
+* Anotar las pruebas de laboratorio que aparezcan de forma abreviada.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+SE ENCUENTRA HbA1C EN 17, TSH 7
+T1 Abbreviation 13 18 
+T2 Abbreviation 26 29 
+~~~
+</div>
+
+* Anotar como abreviaciones los resultados de exámenes que indican positividad o negatividad.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+Paciente presenta VDRL +
+T1 Abbreviation 18 22 
+T2 Abbreviation 23 24 
+~~~
+</div>
+
 ## Reglas negativas
 
 * NO incluir en la etiqueta los puntos, aunque sean puntos abreviativos. 
@@ -196,6 +227,25 @@ T1 Abbreviation 0 3
 ~~~
 </div>
 
+* NO anotar como abreviaciones los nombres de las vertebras.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+con discopatia de L5-S1
+T1 Abbreviation 18 20 
+T2 Abbreviation 21 23 
+~~~
+</div>
+
+* NO anotar como abreviaciones las evaluaciones semicuantitativas de exámenes.
+
+<div class="annotation-incorrect" markdown="1">
+~~~ ann
+Signos de serosis: +++
+T1 Abbreviation 19 22 
+~~~
+</div>
+
 ## Reglas multipalabra
 
 * Anotar como una sola mención las abreviaciones que aparecen en el texto separados sólo por espacios o por guiones y que componen una entidad única.
@@ -221,5 +271,14 @@ T1 Abbreviation 3 9
 … bioquímico destacan hiperCa 10.5, HipoNa 132
 T1 Abbreviation 22 29 
 T2 Abbreviation 36 42 
+~~~
+</div>
+
+<div class="annotation-correct" markdown="1">
+Correcto: se anotan dos abreviaciones
+~~~ ann
+Paracetamol 500 mg xd
+T1 Abbreviation 16 18 
+T2 Abbreviation 19 21 
 ~~~
 </div>

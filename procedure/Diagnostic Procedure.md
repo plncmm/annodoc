@@ -18,3 +18,11 @@ T1 Diagnostic_Procedure 0 20
 ~~~
 </div>
 
+<div class="annotation-correct" markdown="1">
+Correcto
+~~~ ann
+AL EXMAEN ORIENTADO, CLOTE, GLASGOW 14
+T1 Diagnostic_Procedure 28 35 
+~~~
+</div>
+

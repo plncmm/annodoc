@@ -4,8 +4,7 @@ title: "Finding"
 shortdef: "Hallazgo, Signos o Síntomas y Resultados de laboratorio u otras pruebas"
 ---
 
-Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero).
-Además, dentro de la etiqueta “Findings” se pueden anotar dos subentidades: 
+Los Hallazgos o Findings se definen como observaciones, juicios o evaluaciones que se hacen sobre los pacientes. A diferencia de las enfermedades pueden ser normales (pero no necesariamente) y algunos pueden existir sólo en un momento dado (por ejemplo, un nivel de sodio en el suero). Todo evento ginecologico fisiologico, se considerara normal y se tiene que incluir como hallazgo (ej. embarazo). Además, dentro de la etiqueta “Finding” se pueden anotar dos subentidades: 
 
   * **Signos o síntomas:** los signos corresponden a manifestaciones objetivas usualmente determinadas mediante la exploración médica. Los síntomas por el contrario, son elementos subjetivos percibidos y expresados por el paciente. Vea las reglas de anotación específicas de ésta subentidad [aquí](../finding/Sign%20or%20Symptom).
 
@@ -31,6 +30,17 @@ T2 Clinical_Finding 38 45
 ~~~ ann
 Ha estado de buen animo…
 T1 Clinical_Finding 13 23 
+~~~
+</div>
+
+* Anotar todos los antecedentes gineco-obstetricos como hallazgos.
+
+<div class="annotation-correct" markdown="1">
+~~~ ann
+G1 P1 A0 PAP ATIPICO
+T1 Clinical_Finding 0 2 
+T2 Clinical_Finding 3 5 
+T3 Clinical_Finding 6 8 
 ~~~
 </div>
 

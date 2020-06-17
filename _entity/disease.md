@@ -4,9 +4,13 @@ title: "Disease"
 shortdef: "Enfermedades mapeables a un código CIE-10"
 ---
  
- Dentro de esta categoría se anotan las entidades que correspondan a enfermedades mapeables a un diagnóstico reconocido dentro de la terminología de clasificación estándar CIE-10 (Clasificación Internacional de Enfermedades). 
+Una enfermedad se define como aquella “alteración o desviación del estado fisiológico en una o varias partes del cuerpo, por causas en general conocidas, manifestada por síntomas y signos característicos, y cuya evolución es más o menos previsible". 
+
+Dentro de la categoría *Disease* se anotan las entidades que correspondan a enfermedades (ej: enfermedad de Alzheimer), trastornos (ej: trastorno de ansiedad) y síndromes (ej. síndrome de Guillain-Barré) que sean mapeables a un diagnóstico reconocido dentro de la terminología de clasificación estándar CIE-10 (Clasificación Internacional de Enfermedades).
 
  El etiquetar enfermedades es un paso muy importante dentro de este trabajo pues nos permitirá, entre otras cosas, identificar comorbilidades en forma automática en una base de datos masiva. En caso de que tenga dudas de si una entidad corresponde o no a una enfermedad, puede en la plataforma BRAT usar la opción “click here to search” bajo “cie-10_norm_db”o si prefiere puede consultar [https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html](https://eciemaps.mscbs.gob.es/ecieMaps/browser/index_10_mc.html).
+
+Tenga en cuenta sin embargo, que dentro del CIE-10 también se encuentran algunos diagnósticos que no necesariamente corresponden a enfermedades (ej: embarazo), ademas de sígnos y síntomas, los cuales deben anotarse en otra categoría de entidades. En este sentido, se deberá poner a prueba si es que una entidad con código CIE-10 cualifica o no dentro de la categoría *Disease*.
 
 <div class="annotation-correct" markdown="1">
 ~~~ ann
