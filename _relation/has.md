@@ -15,7 +15,7 @@ La identificación de los antecedentes familiares implica determinar si existe u
 madre con depresion recurrente, t. por acumulacion.
 T1 Family_Member 0 5 
 T2 Clinical_Finding 10 30 
-T3 Abbreviation 32 35 
+T3 Abbreviation 32 33 
 T4 Clinical_Finding 32 50 
 R1 Has Arg1:T1 Arg2:T2
 R2 Has Arg1:T1 Arg2:T4
