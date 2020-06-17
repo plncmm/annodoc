@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: Protocolo de Anotación de Entidades en Textos Médicos
+title: Guía de Anotación de Entidades en Textos Médicos
 ---
 
 Pablo Báez-Benavides (1), Fabián Villena (1,2), Manuel Durán (1),  Jocelyn Dunstan (1,2) 
