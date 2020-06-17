@@ -4,7 +4,7 @@ title: "Has"
 shortdef: "Relación entre entidades"
 ---
 
-Mediante la anotación de las relaciones se puede determinar el tipo de relación entre dos o más entidades (si es que ésta existe), por ejemplo entre [Miembro de la Familia](../entity/family_member) y [Enfermedad](../entity/disease) o entre [Procedimiento de Laboratorio](../procedure/Diagnostic%20Procedure) y [Resultado de Laboratorio o Test](../finding/Laboratory%20or%20Test%20Result). 
+Mediante la anotación de las relaciones se puede determinar el tipo de relación entre dos o más entidades (si es que ésta existe), por ejemplo entre [Miembro de la Familia](../entity/family_member) y [Enfermedad](../entity/disease) o entre [Procedimiento](../entity/procedure) y [Resultado de Laboratorio o Test](../finding/Laboratory%20or%20Test%20Result). 
 
 La identificación de los antecedentes familiares implica determinar si existe una relación entre  un sujeto explicita o implicitamente mencionado (ver [Caso Especial](../entity/disease)) y una enfermedad o un hallazgo reportado como diagnosticado/padecido en dicho sujeto. Cuando el sujeto es mencionado explicitamente se emplea la entidad [Has]() para relacionar las entidades.
 
