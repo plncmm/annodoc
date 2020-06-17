@@ -62,7 +62,7 @@ R1 Has Arg1:T1 Arg2:T2
 ~~~ ann
 G1 P1 A0 PAP ATIPICO CELULAS ESCAMOSAS ATIPICAS DE SIGNIFICADO INDETERMINADO
 T1 Diagnostic_Procedure 9 12 
-T2 Laboratory_or_Test_Result 13 20
+T2 Laboratory_or_Test_Result 13 20 
 T3 Laboratory_or_Test_Result 21 76 
 R1 Has Arg1:T1 Arg2:T2
 R2 Has Arg1:T1 Arg2:T3
